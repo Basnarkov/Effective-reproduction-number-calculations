@@ -1,4 +1,4 @@
-# Replacement-number-calculations
+# Effective-reproducion-number-calculations
 You can find here the code for calculation of the effective reproduction number for SIR and SIIS model. 
 
 The numerical simulations are based on stochastic models for population with finite size N. To find the effective reproduction number R<sub>e</sub>, we count the number of new cases from the _tracked_ individual. Each simulation stops once the tracked individual becomes healed. The averages are then calculated from many repetitions of the simulation. Although the simulation can be made _continuous_, in a sence to track the state of the population at each moment, for computational efficiency, we chose to look only at the moments of _change_ - when an individual becomes healed, or new infection appears. Thus, we use the embedded Markov chain, instead of the continuous-time one.
